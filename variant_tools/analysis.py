@@ -75,3 +75,4 @@ def report_variants(differences):
         report.append(f"{pos}\t{ref}\t{input}")
     
     return "\n".join(report)
+
