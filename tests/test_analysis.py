@@ -1,5 +1,5 @@
 import pytest
-from analysis import align_sequences, compare_sequences, report_variants
+from variant_tools.analysis import align_sequences, compare_sequences, report_variants
 
 def test_align_sequences():
     """Test the alignment of two sequences."""
@@ -26,4 +26,3 @@ def test_report_variants_with_variants():
     differences = [(3, 'A', 'C'), (5, 'T', 'G')]
     expected_report = "Position\tReference\tInput\n3\tA\tC\n5\tT\tG"
     assert report_variants(differences) == expected_report
-
