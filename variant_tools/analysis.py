@@ -1,3 +1,6 @@
+"""This file is the genetic toolset for aligning amino acid sequences
+and reporting genetic variants."""
+
 def align_sequences(seq1, seq2, match_score=1, mismatch_penalty=-1, gap_penalty=-1):
     """Perform global alignment of two sequences using the Needleman-Wunsch algorithm."""
     n, m = len(seq1), len(seq2)
